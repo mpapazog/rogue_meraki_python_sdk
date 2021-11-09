@@ -398,7 +398,7 @@ def main(argv):
             
             queryArgument = ""
             if len(query) > 0:            
-                paramString += ", query"
+                paramString += ", query=None"
                 queryArgument = "p_queryItems=query, "
                 queryDocs = "\n#\n# Query parameters:"
                 for q in query:
@@ -410,7 +410,7 @@ def main(argv):
                 
             bodyArgument = ""
             if len(body) > 0:                 
-                paramString += ", body"
+                paramString += ", body=None"
                 bodyArgument = "p_requestBody=body, "
                 bodyDocs = "\n#\n# Request body schema:"
                 for b in body:
