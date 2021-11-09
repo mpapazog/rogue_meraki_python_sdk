@@ -104,7 +104,7 @@ Example of calling a method with a request body:
 ```
 apiKey = "1234"
 organizationId = "4567"
-query = {"name": "Cloned Organization"}
+body = {"name": "Cloned Organization"}
 success, errors, response = meraki_rogue.cloneOrganization(apiKey, organizationId, body)
 ```    
 
