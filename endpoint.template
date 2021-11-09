@@ -1,0 +1,8 @@
+
+###ENDPOINT_TITLE###ENDPOINT_VERB_URI###DOCS_LINK###QUERY_FORMAT###BODY_FORMAT
+
+def ###ENDPOINT_ID(apiKey###PARAMETERS):
+    url = ###RESOURCE_PATH
+    success, errors, headers, response = merakiRequest(apiKey, ###VERB, url, ###QUERY###BODYp_verbose=FLAG_REQUEST_VERBOSE)    
+    return success, errors, response
+
