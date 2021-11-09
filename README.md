@@ -1,6 +1,7 @@
 # rogue_meraki_sdk_generator.py
-A Python 3 script that generates a Meraki Dashboard API SDK for Python 3. 
-*THIS IS NOT THE OFFICIAL MERAKI DASHBOARD API SDK*
+A Python 3 script that generates a Meraki Dashboard API SDK for Python 3.
+
+**THIS IS NOT THE OFFICIAL MERAKI DASHBOARD API SDK**
 
 The intent of the generated module is to provide an easy and reliable way to interact with endpoints that are not
 part of the latest release of the official Meraki Python SDK using Python 3. These types of endpoints are mostly
@@ -58,10 +59,14 @@ How to use the output module:
 1. Rename the output module file to meraki_rogue.py
 2. Copy the module into the same directory as your script
 3. In your script, add the following line to import the module:
+```
     import meraki_rogue
+```
 4. You can now use the endpoint methods included in the module. For example, to get a list of the organizations
    your API key can access, add the following line to your code, assuming your API key is 1234:
+```
     success, errors, response = meraki_rogue.getOrganizations(1234)
+```
     
 To find the correct method for the endpoint you want to use, first find its operationId or resource path. 
 Some ways to find those are:
