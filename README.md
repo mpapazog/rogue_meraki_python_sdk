@@ -1,18 +1,14 @@
 # rogue_meraki_sdk_generator.py
-A Python 3 script that generates a Meraki Dashboard API SDK for Python 3.
+A Python 3 script that generates a Meraki Dashboard API SDK module for Python 3.
 
 **THIS IS NOT THE OFFICIAL MERAKI DASHBOARD API SDK**
 
-The intent of the generated module is to provide an easy and reliable way to interact with endpoints that are not
-part of the latest release of the official Meraki Python SDK using Python 3. These types of endpoints are mostly
-Early Access (alpha/beta) ones, available to members of the Developer Early Access Program.
+The intent of the generated module is to provide an easy and reliable way to interact with endpoints that are not part of the latest release of the official Meraki Python SDK using Python 3. These types of endpoints are mostly Early Access (alpha/beta) ones, available to members of the Developer Early Access Program.
 
 For all other uses, please use the official Meraki Dashboard API Python SDK instead:
 https://github.com/meraki/dashboard-api-python
 
-The script works by pulling the OpenAPI spec of a Meraki dashboard organization and generating code for every
-endpoint available to the chosen organization. If special endpoints, like aplha/beta ones, are enabled for the
-source organization, they will be included in the output module as well.
+The script works by pulling the OpenAPI spec of a Meraki dashboard organization and generating code for every endpoint available to the chosen organization. If special endpoints, like aplha/beta ones, are enabled for the source organization, they will be included in the output module as well.
 
 # Running the script
 * Install Python 3 if you have not done so already. If installing on Windows, it is recommended to select the "Add to PATH" option during installation
