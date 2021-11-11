@@ -108,8 +108,23 @@ body = {"name": "Cloned Organization"}
 success, errors, response = meraki_rogue.cloneOrganization(apiKey, organizationId, body)
 ```    
 
+# Copying code into your script
+
+Alternatively, instead of importing the whole module, you can copy the endpoints you are going to use in your script directly. To do this:
+* Copy the module's core functions and definitions: Find these lines in the code of the output module and copy everything between them:
+```
+# --- MODULE CORE START ---
+
+# --- MODULE CORE END ---
+```
+* Copy the individual endpoint methods that you are going to use. You can find them in the code of the module after line:
+```
+# --- ENDPOINT METHODS BELOW ---
+```
+
 # Useful links
 * The official Meraki API developer page: https://developer.cisco.com/meraki
 * The official Meraki Dashboard API SDK for Python 3: https://github.com/meraki/dashboard-api-python
 * Meraki Dashboard API quick reference with alpha/beta endpoint highlighting: https://github.com/mpapazog/meraki-diff-docs
 * Custom Postman collection that includes alpha/beta endpoints: https://github.com/meraki/automation-scripts/blob/master/postman_collection_generator.py
+* Node.js module generator with alpha/beta endpoint support: https://github.com/meraki/automation-scripts/tree/master/nodejs_sdk_builder
