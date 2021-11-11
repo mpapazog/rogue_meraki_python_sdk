@@ -64,6 +64,8 @@ Example of calling a method with a request body:
 def printHelp():
     print(readMe)
     
+# --- MODULE CORE START ---
+    
 import time
 
 from urllib.parse import urlencode
@@ -200,7 +202,7 @@ def merakiRequest(p_apiKey, p_httpVerb, p_endpoint, p_additionalHeaders=None, p_
     
     return success, errors, responseHeaders, responseBody
     
-    
+# --- MODULE CORE END ---  
     
 # --- ENDPOINT METHODS BELOW ---
     
